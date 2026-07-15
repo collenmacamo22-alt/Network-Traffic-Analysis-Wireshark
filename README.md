@@ -1,171 +1,133 @@
-Network Traffic Analysis with Wireshark
+# Network Traffic Analysis with Wireshark
 
-Project Overview
+## Project Overview
 
-This project demonstrates practical network traffic analysis using Wireshark.
+This project demonstrates practical network traffic analysis using Wireshark in a virtual lab environment. The objective was to capture, inspect, and investigate network traffic while learning how common network protocols work together and how to analyze them from a security analyst's perspective.
 
-The objective was to capture, inspect, and analyze network communications while learning how to investigate normal and potentially suspicious activity.
+Rather than simply identifying packets, this project focuses on reconstructing events, investigating network conversations, validating IP ownership, and documenting findings using an evidence-based approach similar to that used by Security Operations Center (SOC) analysts.
 
-The project covers:
+---
 
-* DNS analysis
-* TCP communication
-* TLS encryption
-* HTTP requests
-* IP address investigation
-* Network conversations
-* Incident documentation
+## Objectives
 
-⸻
+- Capture live network traffic using Wireshark.
+- Analyze DNS requests and responses.
+- Understand TCP communication.
+- Investigate TLS encrypted traffic.
+- Compare HTTP and HTTPS traffic.
+- Analyze network conversations.
+- Investigate external IP addresses.
+- Build an incident timeline.
+- Document findings professionally.
 
-Objectives
+## Tools Used
 
-* Capture live network traffic
-* Identify common network protocols
-* Investigate DNS requests and responses
-* Analyze encrypted TLS sessions
-* Compare encrypted and unencrypted web traffic
-* Investigate IP addresses
-* Document findings as an analyst
+- Wireshark
+- Oracle VirtualBox
+- Windows 10 Virtual Machine
+- Ubuntu Server (Lab Environment)
+- IP Intelligence Lookup Services
+- NeverSSL
 
-⸻
+## Skills Demonstrated
 
-Tools Used
+- Network Traffic Analysis
+- Packet Analysis
+- DNS Investigation
+- TCP Communication Analysis
+- TLS Encryption Analysis
+- HTTP Protocol Analysis
+- Network Conversation Analysis
+- IP Address Investigation
+- Incident Investigation
+- Evidence-Based Reporting
 
-* Wireshark
-* Windows 10 Virtual Machine
-* VirtualBox
-* IP lookup services
-* NeverSSL
+## Lab Environment
 
-⸻
+The analysis was performed inside a controlled virtual lab environment using Oracle VirtualBox.
 
-Skills Demonstrated
+Lab Components:
 
-* Packet Analysis
-* DNS Investigation
-* HTTP Analysis
-* TLS Analysis
-* TCP Stream Analysis
-* Network Troubleshooting
-* IP Reputation Investigation
-* Incident Documentation
+- Windows 10 Virtual Machine
+- Ubuntu Server Virtual Machine
+- NAT Networking
+- Wireshark Packet Capture
+- Web browsing activity (Google, Bing, YouTube)
+- HTTP traffic generated using NeverSSL
+## Investigation Methodology
 
-⸻
+The investigation followed a structured methodology similar to that used by Security Operations Center (SOC) analysts.
 
-Key Findings
+1. Captured live network traffic using Wireshark.
+2. Identified common protocols present in the capture.
+3. Examined DNS requests and responses.
+4. Investigated TCP and TLS communication.
+5. Compared encrypted HTTPS traffic with unencrypted HTTP traffic using NeverSSL.
+6. Reviewed network conversations to identify the most active communications.
+7. Performed IP address enrichment using public intelligence sources.
+8. Validated findings using application-layer evidence such as HTTP headers.
+9. Documented conclusions based on observed evidence.
+10. 
+## Investigation Timeline
 
-DNS
+### Event 1 – DNS Resolution
 
-Observed multiple successful DNS queries and responses for:
+The client initiated a DNS query requesting the IP address of a website before any communication could occur.
 
-* Google
-* Bing
-* YouTube
+### Event 2 – DNS Response
 
-⸻
+The DNS server successfully returned the requested address, allowing the client to identify the destination server.
 
-TLS
+### Event 3 – Connection Establishment
 
-Observed encrypted TLS traffic including:
+The client established communication with the destination server using standard web protocols.
 
-* Client Hello
-* Server Hello
-* Certificate exchange
+### Event 4 – Secure Communication
 
-Verified that application data remained encrypted.
+The client negotiated an encrypted session before exchanging application data, protecting the confidentiality of the communication.
 
-⸻
+### Event 5 – Resource Request
 
-HTTP
+The client requested web resources from the destination server. HTTP analysis showed legitimate requests consistent with normal browsing and Windows Update activity.
 
-Captured unencrypted HTTP traffic using NeverSSL.
+### Event 6 – Investigation Outcome
 
-Successfully identified:
+Initially unfamiliar external IP addresses were investigated through IP intelligence lookups and packet inspection. Application-layer evidence confirmed the observed traffic was legitimate and no malicious activity was identified.
 
-* GET request
-* Host header
-* User-Agent
-* Accept headers
+## Key Findings
 
-Demonstrated the difference between encrypted HTTPS traffic and plaintext HTTP traffic.
+### DNS Analysis
 
-⸻
+Successfully captured and analyzed DNS queries and responses for multiple domains including Google, Bing, and YouTube. Observed how domain names are resolved into IP addresses before communication begins.
 
-IP Investigation
+### TCP and TLS Analysis
 
-Investigated multiple IP addresses.
+Observed the establishment of secure network sessions, including TCP communication and TLS handshakes. Verified that application data was encrypted and could not be read directly without the appropriate encryption keys.
 
-Findings included:
+### HTTP Analysis
 
-* Fastly CDN (United Kingdom)
-* Fastly CDN (Netherlands)
-* Microsoft Windows Update traffic
-* Initial investigation of a Russian-hosted IP, later determined to be legitimate Windows Update infrastructure.
+Captured plaintext HTTP traffic using NeverSSL to compare it with encrypted HTTPS traffic. Identified HTTP request methods, including GET, and examined important HTTP headers such as Host and User-Agent.
 
-⸻
+### Network Conversation Analysis
 
-Lessons Learned
+Used Wireshark's Conversations feature to identify the most active communications and determine which systems transferred the greatest amount of network traffic.
 
-This project improved my understanding of:
+### IP Intelligence Investigation
 
-* How DNS resolution works
-* TCP session establishment
-* TLS encryption
-* HTTP requests
-* Packet analysis methodology
-* How to differentiate legitimate and suspicious traffic
+Performed IP address enrichment using public intelligence sources. Investigated unfamiliar IP addresses by examining ownership, hosting providers, and application-layer evidence before determining whether the communication was legitimate.
 
-⸻
+### Investigation Outcome
 
-Screenshots
+A potentially suspicious external IP address was investigated in detail. Packet analysis revealed that the communication was associated with legitimate Microsoft Windows Update activity. No evidence of malicious behavior was identified during the investigation.
 
-(Add screenshots here)
+## Lessons Learned
 
-⸻
+This project reinforced several important cybersecurity concepts:
 
-Future Improvements
-
-* Analyze malware traffic
-* Investigate malicious PCAP files
-* Create detection rules
-* Automate packet analysis using Zeek
-
-⸻
-
-Author
-
-Collen Macamo
-
-CompTIA Security+ Certified
-
-Aspiring SOC Analyst
-
-⸻
-
-Step 4: Screenshots
-
-We’ll include screenshots such as:
-
-* DNS query
-* DNS response
-* TLS handshake
-* HTTP GET request
-* Conversations window
-* IP lookup results
-* TCP Stream
-* NeverSSL capture
-
-⸻
-
-Step 5: What this project demonstrates
-
-This is what recruiters should immediately see from your repository:
-
-* You can use Wireshark confidently.
-* You understand how DNS, TCP, TLS, and HTTP work together.
-* You can investigate IP addresses instead of making assumptions.
-* You can distinguish normal network activity from suspicious activity.
-* You know how to document findings professionally.
-# Network-Traffic-Analysis-Wireshark
-Investigated DNS, TCP, TLS and HTTP traffic using Wireshark. Analyzed network conversations, validated IP ownership, and documented findings in a professional incident report.
+- DNS queries identify where a service is located before communication begins.
+- TCP provides reliable communication between systems.
+- TLS encrypts network traffic, protecting sensitive information from being read in transit.
+- HTTP headers can reveal valuable investigative information even when the content itself is encrypted.
+- IP addresses should never be judged solely by their geographic location or hosting provider.
+- Effective investigations require collecting evidence from multiple sources before reaching a conclusion.
+- Security analysts should focus on understanding the sequence of events rather than analyzing individual packets in isolation.
