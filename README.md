@@ -136,9 +136,9 @@ This project reinforced several important cybersecurity concepts:
 
 The original packet capture files used during this investigation are available below.
 
-- [Packet Capture 1](Captures/Packet-Capture-1.pcapng)
-- [Packet Capture 2](Captures/Packet-Capture-2.pcapng)
-- [Packet Capture 3](Captures/Packet-Capture-3.pcapng)
+- [Packet Capture 1](Captures/packet-capture-1.pcapng)
+- [Packet Capture 2](Captures/packet-capture-2.pcapng)
+- [Packet Capture 3](Captures/packet-capture-3.pcapng)
 
 ## Screenshots
 
