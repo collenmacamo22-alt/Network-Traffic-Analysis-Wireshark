@@ -130,7 +130,15 @@ This project reinforced several important cybersecurity concepts:
 - HTTP headers can reveal valuable investigative information even when the content itself is encrypted.
 - IP addresses should never be judged solely by their geographic location or hosting provider.
 - Effective investigations require collecting evidence from multiple sources before reaching a conclusion.
-- Security analysts should focus on understanding the sequence of events rather than analyzing individual packets in isolation.
+- Security analysts should focus on understanding the sequence of events rather than analyzing individual packets in isolation.  
+
+## Packet Captures
+
+The original packet capture files used during this investigation are available below.
+
+- [Packet Capture 1](captures/packet-capture-1.pcapng)
+- [Packet Capture 2](captures/packet-capture-2.pcapng)
+- [Packet Capture 3](captures/packet-capture-3.pcapng)
 
 ## Screenshots
 
