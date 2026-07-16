@@ -136,31 +136,31 @@ This project reinforced several important cybersecurity concepts:
 
 ### DNS Query
 
-![DNS Query](screenshots/dns-query.png)
+![DNS Query](Screenshots/dns-query.png)
 
 ### DNS Response
 
-![DNS Response](screenshots/dns-response.png)
+![DNS Response](Screenshots/dns-response.png)
 
 ### TLS Handshake
 
-![TLS Handshake](screenshots/tls-handshake.png)
+![TLS Handshake](Screenshots/tls-handshake.png)
 
 ### HTTP GET Request
 
-![HTTP GET](screenshots/http-get.png)
+![HTTP GET](Screenshots/http-get.png)
 
 ### TCP Stream
 
-![TCP Stream](screenshots/tcp-stream.png)
+![TCP Stream](Screenshots/tcp-stream.png)
 
 ### Network Conversations
 
-![Conversations](screenshots/conversations.png)
+![Conversations](Screenshots/conversations.png)
 
 ### IP Investigation
 
-![IP Investigation](screenshots/ip-investigation.png)
+![IP Investigation](Screenshots/ip-investigation.png)
 
 ## Future Improvements
 
