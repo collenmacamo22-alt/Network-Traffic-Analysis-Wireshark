@@ -131,3 +131,53 @@ This project reinforced several important cybersecurity concepts:
 - IP addresses should never be judged solely by their geographic location or hosting provider.
 - Effective investigations require collecting evidence from multiple sources before reaching a conclusion.
 - Security analysts should focus on understanding the sequence of events rather than analyzing individual packets in isolation.
+
+## Screenshots
+
+### DNS Query
+
+![DNS Query](screenshots/dns-query.png)
+
+### DNS Response
+
+![DNS Response](screenshots/dns-response.png)
+
+### TLS Handshake
+
+![TLS Handshake](screenshots/tls-handshake.png)
+
+### HTTP GET Request
+
+![HTTP GET](screenshots/http-get.png)
+
+### TCP Stream
+
+![TCP Stream](screenshots/tcp-stream.png)
+
+### Network Conversations
+
+![Conversations](screenshots/conversations.png)
+
+### IP Investigation
+
+![IP Investigation](screenshots/ip-investigation.png)
+
+## Future Improvements
+
+Future work for this project includes:
+
+- Investigating malicious packet captures
+- Performing malware traffic analysis
+- Creating detection rules based on captured traffic
+- Automating packet analysis with Zeek
+- Expanding the investigation to include IPv6 traffic
+
+## Author
+
+**Siphamandla Macamo**
+
+CompTIA Security+ Certified
+
+Aspiring SOC Analyst
+
+GitHub Portfolio Project
