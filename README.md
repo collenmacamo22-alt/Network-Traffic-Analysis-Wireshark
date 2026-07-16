@@ -134,7 +134,7 @@ This project reinforced several important cybersecurity concepts:
 
 ## Packet Captures
 
-The original packet capture files used during this investigation are available below.
+The original packet capture files used during this investigation are available below.> **Note:** GitHub cannot preview `.pcapng` files in the browser. Click the file and select **View raw** to download it, then open it with Wireshark.
 
 - [Packet Capture 1](Captures/packet-capture-1.pcapng)
 - [Packet Capture 2](Captures/packet-capture-2.pcapng)
